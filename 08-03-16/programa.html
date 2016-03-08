@@ -1,0 +1,48 @@
+<html>
+	<head>
+	<style>
+	#boton{
+	position: absolute;
+	left: 150px;
+	top: 30px;
+	}
+	input{
+	 margin-top: 5px;
+	 margin-left: 40px;
+	 width: 30px;
+	}
+	#salida{
+	  margin-left: 60px;
+	}
+	</style>
+	</head>
+	<body>
+		<div>
+			<input type="text" id="entrada1"></input>
+		</div>
+		<div> <button id="boton"> + </button> </div>
+		<div>
+			<input type="text" id="entrada2"></input>
+		</div>
+		<div> ----------------------------------- </div>
+		<div id="salida">
+			0
+		</div>
+		<script>
+		var e1,e2,b,s;
+		e1 = document.getElementById("entrada1");
+		e2 = document.getElementById("entrada2");
+		b = document.getElementById("boton");
+		s = document.getElementById("salida");
+		b.onclick = function()
+		{
+		   var x,y,z;
+		   x = parseFloat(e1.value);
+		   y = parseFloat(e2.value);
+		   z = x + y;
+		   s.innerHTML = z;
+		}
+
+		</script>
+	</body>
+</html>
