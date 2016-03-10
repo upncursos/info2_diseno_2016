@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 <input type="text" id="entrada"></input>
@@ -12,8 +13,23 @@
 	boton = document.getElementById("boton");
 	boton.onclick = function()
 	{
-	
-	
+		edad = parseInt(entrada.value);
+		if(edad<13)
+		{
+			salida.innerHTML = "Usted es niño";
+		}
+		if(edad>=13 && edad<20)
+		{
+			salida.innerHTML = "Usted es adolescente";
+		}
+		if(edad>=20 && edad<=30)
+		{
+		  salida.innerHTML = "Usted es joven";
+		}
+		if(edad>30)
+		{
+		  salida.innerHTML = "Usted es viejo";
+		}
 	
 	}
 	
