@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+Cuál es la capital de Venezuela?
+<input type="text" id="entrada"></input>
+<button id="boton">aceptar</button>
+<div id="salida"></div>
+<script>
+	var edad,salida, entrada;
+	entrada = document.getElementById("entrada");
+	salida = document.getElementById("salida");
+	boton = document.getElementById("boton");
+	boton.onclick = function()
+	{
+	   var respuesta;
+	   respuesta = entrada.value;
+	   if(respuesta=="Caracas")
+	   {
+	      salida.innerHTML="Correcto";
+	   }
+	   else
+	   {
+	     salida.innerHTML="Incorrecto";
+	   }
+		
+	
+	}
+	
+
+</script>
+
+
+</body>
+</html>
