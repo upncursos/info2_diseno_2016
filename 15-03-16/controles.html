@@ -24,6 +24,14 @@ Mujer
 </div>
 
 <div>
+<div>Estado civil:</div>
+Soltero
+<input type="radio" name="genero" id="soltero" ></input>
+casado
+<input type="radio" name="genero" id="casado" ></input>
+</div>
+
+<div>
 	Vive en:
 	<select id="lista">
 	<option>Bogotá</option>
@@ -35,7 +43,7 @@ Mujer
 <button id="boton">aceptar</button>
 <div id="salida"></div>
 <script>
-	var lista,hombre,mujer,deporte,fuma,nombre;
+	var lista,hombre,mujer,deporte,fuma,nombre,salida;
 	
 	nombre = document.getElementById("nombre");
 	lista = document.getElementById("lista");
@@ -44,12 +52,23 @@ Mujer
 	fuma = document.getElementById("fuma");
 	deporte = document.getElementById("deporte");	
 	boton = document.getElementById("boton");
+	salida = document.getElementById("salida");
 	
 	boton.onclick = function()
 	{
-	   
+	   var mensaje = "";
+	   mensaje = mensaje + nombre.value;
+	   if(fuma.checked==true)
+	   {
+	      mensaje = mensaje + " Debería dejar de fumar";
+	   }
+	   else
+	   {
+	      mensaje = mensaje;
+	   }
 		
-	
+		
+	   salida.innerHTML=mensaje;
 	}
 	
 
