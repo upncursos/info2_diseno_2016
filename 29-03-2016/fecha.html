@@ -1,0 +1,26 @@
+<input type="date" id="entrada"></input>
+<button id="boton">Aceptar</button>
+<p id="salida">Su signo es:</p>
+<script>
+var entrada, boton,salida;
+entrada = document.getElementById("entrada");
+boton = document.getElementById("boton");
+salida = document.getElementById("salida");
+
+boton.onclick = function()
+{
+     var fecha, mes, dia;
+     
+     fecha = new Date(entrada.value);	
+     mes = fecha.getMonth();	
+     dia = fecha.getDate();
+
+     console.log("mes" ,mes);
+     console.log("dia" ,dia);	 
+
+
+}
+
+
+
+</script>
