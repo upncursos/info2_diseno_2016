@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<script src="js/jquery-1.12.3.min.js" ></script>
+<script src="js/bootstrap.min.js" ></script>
+<style>
+  .color-rojo{
+    color: red;
+  }
+</style>
+</head>
+
+<body>
+<p> Uno </p>
+<p id="p1"> Dos </p>
+<p> tres </p>
+<button id="boton1" class="btn btn-primary">Cambiar a Rojo</button>
+<button id="boton2" class="btn btn-primary">Mostrar</button>
+<button id="boton3" class="btn btn-primary">Ocultar</button>
+<script>
+$(document).ready(function(){
+    $("#boton1").click(
+	 function(){
+	    $("#p1").addClass("color-rojo");
+		
+	 }
+	
+	);
+	$("#boton2").click(
+	 function(){
+	    $("p").show();
+		
+	 }
+	
+	);
+	$("#boton3").click(
+	 function(){
+	    $("p").hide();
+		
+	 }
+	
+	);
+});
+</script>
+</body>
+</html>
+
+
+
+
